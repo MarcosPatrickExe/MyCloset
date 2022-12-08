@@ -31,6 +31,10 @@ com.mycloset.app-merged_res-29 /home/reinaldo/Documentos/github/MyCloset/android
 com.mycloset.app-debug-30 /home/reinaldo/Documentos/github/MyCloset/android/app/src/debug/res
 com.mycloset.app-main-31 /home/reinaldo/Documentos/github/MyCloset/android/app/src/main/res
 com.mycloset.app-packaged_res-32 /home/reinaldo/Documentos/github/MyCloset/node_modules/@react-native-masked-view/masked-view/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-33 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-34 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-35 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-33 /home/reinaldo/Documentos/github/MyCloset/node_modules/@react-native-picker/picker/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-34 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-gesture-handler/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-35 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-linear-gradient/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-36 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-37 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-38 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-39 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
