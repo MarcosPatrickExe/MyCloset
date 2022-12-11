@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mycloset.app-mergeDebugResources-33:/values-ar/values-ar.xml",
+            "outputFile": "com.mycloset.app-mergeDebugResources-39:/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/home/reinaldo/.gradle/caches/transforms-3/f1af0dac56fe1ec775e4cee70f60ad03/transformed/browser-1.4.0/res/values-ar/values-ar.xml",

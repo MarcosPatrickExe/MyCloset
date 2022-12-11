@@ -7,10 +7,13 @@ import Icon from 'react-native-vector-icons/Feather';
 import { ProductDetail } from "../screens/ProductDetail";
 import { ShareCode } from "../screens/ShareCode";
 import { RegisterProduct } from "../screens/RegisterProduct";
+import { ScannerCode } from "../screens/ScannerCode";
+import { useNavigation } from "@react-navigation/native";
 
 export function PrivateRoute() {
     Icon.loadFont();
     const Stack = createStackNavigator();
+    const {navigate} = useNavigation()
     
     return(
         <>
@@ -26,7 +29,7 @@ export function PrivateRoute() {
                 }
             }}>
                 <Stack.Screen name="Home" component={Home} options={{
-                    headerRight: () => <Icon name="aperture" color="white" size={35}/>,
+                    headerRight: () => <Icon name="aperture" color="white" size={35} onPress={() => navigate('ScannerCode')}/>,
                     headerRightContainerStyle: {
                         marginRight: 20
                     }
@@ -38,6 +41,7 @@ export function PrivateRoute() {
                 <Stack.Screen name="ShareCode" component={ShareCode} options={{
                     headerTitle: 'Compartilhar código'
                 }}/>
+                <Stack.Screen name="ScannerCode" component={ScannerCode}/>
             </Stack.Navigator>
         </>
     )

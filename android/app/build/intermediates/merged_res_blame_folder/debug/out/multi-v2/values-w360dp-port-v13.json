@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mycloset.app-mergeDebugResources-33:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
+            "outputFile": "com.mycloset.app-mergeDebugResources-39:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
                     "source": "/home/reinaldo/.gradle/caches/transforms-3/0d1cfdcc191390bf79cf28fe48b6f226/transformed/material-1.1.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",

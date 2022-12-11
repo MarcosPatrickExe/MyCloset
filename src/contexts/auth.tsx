@@ -20,8 +20,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     useEffect(() => {
         if(userInfo) {
             setSigned(true);
-            console.log(userInfo);
-            
         }
     }, [signed, userInfo]);
 
