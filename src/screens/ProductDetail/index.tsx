@@ -11,7 +11,7 @@ export function ProductDetail() {
     const {id, name, category, description, photo, price, user} = params;
 
     setOptions({
-        headerTitle: category
+        headerTitle: category,
     })
 
     return (
@@ -24,7 +24,7 @@ export function ProductDetail() {
                         <CardPrice>R$ {price}</CardPrice>
                     </CardTitleWrapper>
                     <ShareWrapper>
-                        <ShareIcon onPress={() => navigate('ShareCode' as never, id as never)}/>
+                        <ShareIcon onPress={() => navigate('ShareCode' as never, {id} as never)}/>
                     </ShareWrapper>
                 </CardTitleView>
                 <CardDescription>{description}</CardDescription>

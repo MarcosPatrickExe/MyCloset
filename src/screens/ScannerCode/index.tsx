@@ -4,9 +4,15 @@ import { StyleSheet, Text } from 'react-native';
 import { useCameraDevices } from 'react-native-vision-camera';
 import { Camera } from 'react-native-vision-camera';
 import { useScanBarcodes, BarcodeFormat } from 'vision-camera-code-scanner';
+import firestore from '@react-native-firebase/firestore';
+import { StackActions, useNavigation } from '@react-navigation/native';
 
 export function ScannerCode() {
+  const {navigate, dispatch} = useNavigation();
   const [hasPermission, setHasPermission] = React.useState(false);
+  const [isScanning, setIsScanning] = React.useState(false);
+  const [code, setCode] = React.useState<string>('');
+
   const devices = useCameraDevices();
   const device = devices.back;
 
@@ -14,13 +20,29 @@ export function ScannerCode() {
     checkInverted: true,
   });
 
-  // Alternatively you can use the underlying function:
-  //
-  // const frameProcessor = useFrameProcessor((frame) => {
-  //   'worklet';
-  //   const detectedBarcodes = scanBarcodes(frame, [BarcodeFormat.QR_CODE], { checkInverted: true });
-  //   runOnJS(setBarcodes)(detectedBarcodes);
-  // }, []);
+  React.useEffect(() => {
+    (
+      async () => {
+        try {
+          
+          const barcode = barcodes[0]?.displayValue;
+          if(barcode !== undefined) {
+            setIsScanning(true);
+            setCode(barcode);
+            const clothe = await firestore().collection('Clothes').doc(barcode).get();
+            return dispatch(StackActions.replace('ProductDetail', {
+              id: barcode,
+              ...clothe.data()
+            }));
+          }
+          
+
+        } catch {
+          setIsScanning(false);
+        }
+      }
+    )()
+  }, [barcodes])
 
   React.useEffect(() => {
     (async () => {
@@ -36,15 +58,16 @@ export function ScannerCode() {
         <Camera
           style={StyleSheet.absoluteFill}
           device={device}
-          isActive={true}
+          isActive={!isScanning}
           frameProcessor={frameProcessor}
           frameProcessorFps={5}
+          
         />
-        {barcodes.map((barcode, idx) => (
-          <Text key={idx} style={styles.barcodeTextURL}>
-            {barcode.displayValue}
-          </Text>
-        ))}
+        
+        <Text>
+          {code}
+        </Text>
+        
       </>
     )
   );

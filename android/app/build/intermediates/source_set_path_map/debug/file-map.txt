@@ -52,6 +52,8 @@ com.mycloset.app-packaged_res-50 /home/reinaldo/Documentos/github/MyCloset/node_
 com.mycloset.app-packaged_res-51 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-linear-gradient/android/build/intermediates/packaged_res/debug
 com.mycloset.app-packaged_res-52 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
 com.mycloset.app-packaged_res-53 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-54 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-55 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
-com.mycloset.app-packaged_res-56 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-vision-camera/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-54 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-share/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-55 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-svg/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-56 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-vector-icons/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-57 /home/reinaldo/Documentos/github/MyCloset/node_modules/react-native-vision-camera/android/build/intermediates/packaged_res/debug
+com.mycloset.app-packaged_res-58 /home/reinaldo/Documentos/github/MyCloset/node_modules/vision-camera-code-scanner/android/build/intermediates/packaged_res/debug

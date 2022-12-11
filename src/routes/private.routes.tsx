@@ -29,7 +29,7 @@ export function PrivateRoute() {
                 }
             }}>
                 <Stack.Screen name="Home" component={Home} options={{
-                    headerRight: () => <Icon name="aperture" color="white" size={35} onPress={() => navigate('ScannerCode')}/>,
+                    headerRight: () => <Icon name="aperture" color="white" size={35} onPress={() => navigate('ScannerCode' as never)}/>,
                     headerRightContainerStyle: {
                         marginRight: 20
                     }
