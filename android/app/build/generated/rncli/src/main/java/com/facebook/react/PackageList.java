@@ -27,8 +27,12 @@ import com.reactnativecommunity.picker.RNCPickerPackage;
 import com.rnfs.RNFSPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
+// react-native-image-picker
+import com.imagepicker.ImagePickerPackage;
 // react-native-linear-gradient
 import com.BV.LinearGradient.LinearGradientPackage;
+// react-native-permissions
+import com.zoontek.rnpermissions.RNPermissionsPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -98,7 +102,9 @@ public class PackageList {
       new RNCPickerPackage(),
       new RNFSPackage(),
       new RNGestureHandlerPackage(),
+      new ImagePickerPackage(),
       new LinearGradientPackage(),
+      new RNPermissionsPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

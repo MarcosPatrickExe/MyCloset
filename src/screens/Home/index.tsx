@@ -1,4 +1,4 @@
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import React, { useEffect } from "react";
 import { Card } from "../../components/Card";
 import { Container, Content, FloatingButton, FloatingButtonIcon } from "./styles";
@@ -18,7 +18,7 @@ export function Home() {
   const {navigate} = useNavigation();
   const [clothes, setClothes] = React.useState<ClothesProps[]>([]);
 
-  useEffect(() => {
+  useFocusEffect(() => {
     (async () => {
       const clothesCollection = await firestore().collection('Clothes').get();
       const clothesReturn: ClothesProps[] = clothesCollection.docs.map(doc => {
@@ -37,7 +37,7 @@ export function Home() {
       setClothes(clothesReturn);
     })()
     
-  }, [])
+  })
   
   
   return (
